@@ -1,4 +1,4 @@
-package com.night.hack.hacknightproject;
+package com.example.hack_night;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
