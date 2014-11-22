@@ -9,13 +9,32 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.night.hack.hacknightproject.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.night.hack.hacknightproject.BackgroundService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.night.hack.hacknightproject.TransparentActvity"
+            android:theme="@style/Theme.Transparent"
+            android:label="@string/title_activity_transparent_actvity" >
+        </activity>
+
+        <receiver android:name=".ButtonControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
